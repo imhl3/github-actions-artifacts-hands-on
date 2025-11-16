@@ -28,6 +28,7 @@ jobs:
         uses: actions/download-artifact@v5
         with:
           path: ./artifacts
+          name: hello-artifact
 
       - name: display contents
         run: cat ./artifacts/hello.txt
@@ -35,5 +36,6 @@ jobs:
       - name: show-stats
         run: |
           pwd
-          ls
+          ls -la
+
           
